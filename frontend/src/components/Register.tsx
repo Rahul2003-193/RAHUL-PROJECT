@@ -10,7 +10,7 @@ const Register: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await axios.post('https://backend-r6ps..com/api/register', { username, password });
+      await axios.post('https://backend-r6ps.onrender.com/api/register', { username, password });
       navigate('/login');
     } catch (error) {
       console.error('Registration failed:', error);
